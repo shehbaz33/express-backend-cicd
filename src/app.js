@@ -2,19 +2,19 @@ const express = require('express');
 
 const app = express();
 
-app.get("/",(req,res) => {
+app.get("/api",(req,res) => {
     res.json({msg:"Home route"});
 });
 
-app.get("/hello",(req,res) => {
+app.get("/api/hello",(req,res) => {
     res.json({msg:"Hello from server",status:200});
 });
 
-app.get("/world",(req,res) => {
+app.get("/api/world",(req,res) => {
     res.json({msg:"World",status:201});
 });
 
-app.get("/admin",(req,res) => {
+app.get("/api/admin",(req,res) => {
     res.json({msg:"admin"});
 });
 
