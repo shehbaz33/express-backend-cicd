@@ -7,15 +7,15 @@ app.get("/",(req,res) => {
 });
 
 app.get("/hello",(req,res) => {
-    res.json({msg:"Hello"});
+    res.json({msg:"Hello page"});
 });
 
 app.get("/world",(req,res) => {
-    res.json({msg:"World"});
+    res.json({msg:"World page"});
 });
 
 app.get("/admin",(req,res) => {
-    res.json({msg:"dashboard"});
+    res.json({msg:"admin page"});
 });
 
 app.listen(5000,() => console.log('running on port 5000'));
