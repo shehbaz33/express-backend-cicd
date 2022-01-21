@@ -7,7 +7,7 @@ app.get("/",(req,res) => {
 });
 
 app.get("/hello",(req,res) => {
-    res.json({msg:"Hello",status:200});
+    res.json({msg:"Hello from server",status:200});
 });
 
 app.get("/world",(req,res) => {
