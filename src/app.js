@@ -7,16 +7,16 @@ app.get("/",(req,res) => {
 });
 
 app.get("/hello",(req,res) => {
-    res.json({msg:"Hello"});
+    res.json({msg:"Hello",status:200});
 });
 
 app.get("/world",(req,res) => {
-    res.json({msg:"World"});
+    res.json({msg:"World",status:201});
 });
 
 app.get("/admin",(req,res) => {
     res.json({msg:"admin"});
 });
 
-app.listen(5000,() => console.log('running on port 5000'));
+app.listen(3000,() => console.log('running on port 3000'));
 
